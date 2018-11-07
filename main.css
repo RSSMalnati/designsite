@@ -1,0 +1,255 @@
+body, html {
+    height: 100%;
+}
+
+
+
+/* The hero image */
+.hero-image {
+    background-image: url("Backgrounds/Desktop/Hero%20Image.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 544px){
+    .hero-image {
+        background-image:url(Backgrounds/Mobile/Hero.png);
+    }
+}
+
+/* 3 Hour Design Background */
+.image-hour {
+    background-image:url(Backgrounds/Desktop/3%20Hour%20Designs.png);
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 544px){
+    .image-hour {
+        background-image:url(Backgrounds/Mobile/3%20Hour%20Designs.png);
+    }
+}
+
+/* Pro Work Background*/
+.image-pro {
+    background-image:url(Backgrounds/Desktop/Pro%20Work.png);
+    height: 85%;
+    width: 100%;
+}
+
+@media (max-width: 544px){
+    .image-pro {
+        background-color: white;
+    }
+}
+
+/* Personal Work Background */
+.image-personal {
+    background-image:url(Backgrounds/Desktop/Personal%20Work.png);
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 544px){
+    .image-personal {
+        background-image:url(Backgrounds/Mobile/Personal%20Work.png);
+    }
+}
+
+.padding {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.padding-bottom-div {
+    padding-bottom: 5%;
+}
+
+.large-title {
+    font-size: 125px;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .large-title {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .large-title {
+    font-size: 75px;;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .large-title {
+    font-size: 50px;
+  }
+}
+
+
+.sub-title {
+    font-size: 32px;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .sub-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .sub-title {
+    font-size: 20px;;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .sub-title {
+    font-size: 16px;
+  }
+}
+
+.large-title-black {
+    font-size: 125px;
+    color: black;
+    white-space: normal;
+}
+
+@media screen and (max-width: 992px) {
+  .large-title-black {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .large-title-black {
+    font-size: 75px;;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .large-title-black {
+    font-size: 50px;
+  }
+}
+
+.sub-title-black {
+    font-size: 32px;
+    color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .sub-title-black {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .sub-title-black {
+    font-size: 20px;;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .sub-title-black {
+    font-size: 16px;
+  }
+}
+
+.button-text{
+    color: white;
+}
+
+.button-text-black {
+    color: black;
+}
+
+.button-custom {
+    background-color: transparent;
+    color: white;
+    border-radius: 100px;
+    border: 3px solid #FFFFFF;
+    height: 40px;
+    width: 130px;
+    font-family: ProductSans;
+}
+
+.button-custom-black {
+    background-color: transparent;
+    color: white;
+    border-radius: 100px;
+    border: 3px solid #000000;
+    height: 40px;
+    width: 130px;
+    font-family: ProductSans;
+}
+
+
+.product-sans {
+    font-family: ProductSans;
+}
+
+.product-sans-bold {
+    font-family: ProductSansBold;
+}
+
+@font-face {
+font-family: "ProductSans";
+src: url("Fonts/Product_Sans_Regular.ttf");
+}
+
+@font-face {
+font-family: "ProductSansBold";
+src: url("Fonts/Product_Sans_Bold.ttf");
+}
+
+/* Scroll down arrow */
+.scroll-down {
+	position: absolute;
+	bottom: 60px;
+    left: 49%;
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 35px;
+  height: 35px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-radius: 3px;
+  z-index: 9;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
